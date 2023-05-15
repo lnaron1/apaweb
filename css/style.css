@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    outline: 1px dashed red;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+.homebtn button {
+    position: relative;
+    padding: 8px 16px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
+    border-radius: 7px;
+}
+
+.homebtn button::before {
+    content: '';
+    background-color: #58626c;
+    display: block;
+    width: 0;
+    height: 38.4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.homebtn button:hover {
+    color: white;
+}
+
+.homebtn button:hover::before {
+    width: 100%;
+}
+
+.parkettabtn button {
+    position: relative;
+    padding: 8px 16px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
+    border-radius: 7px;
+}
+
+.parkettabtn button::before {
+    content: '';
+    background-color: #58626c;
+    display: block;
+    width: 0;
+    height: 38.4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.parkettabtn button:hover {
+    color: white;
+}
+
+.parkettabtn button:hover::before {
+    width: 100%;
+}
+
+.villanybtn button {
+    position: relative;
+    padding: 8px 16px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
+    border-radius: 7px;
+}
+
+.villanybtn button::before {
+    content: '';
+    background-color: #58626c;
+    display: block;
+    width: 0;
+    height: 38.4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.villanybtn button:hover {
+    color: white;
+}
+
+.villanybtn button:hover::before {
+    width: 100%;
+}
+
+.lakatolasbtn button {
+    position: relative;
+    padding: 8px 16px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
+    border-radius: 7px;
+}
+
+.lakatolasbtn button::before {
+    content: '';
+    background-color: #58626c;
+    display: block;
+    width: 0;
+    height: 38.4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.lakatolasbtn button:hover {
+    color: white;
+}
+
+.lakatolasbtn button:hover::before {
+    width: 100%;
+}
+
+.elerhetosegbtn button {
+    position: relative;
+    padding: 8px 16px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
+    border-radius: 7px;
+}
+
+.elerhetosegbtn button::before {
+    content: '';
+    background-color: #58626c;
+    display: block;
+    width: 0;
+    height: 38.4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.elerhetosegbtn button:hover {
+    color: white;
+}
+
+.elerhetosegbtn button:hover::before {
+    width: 100%;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: headerbckgrnd ease-in-out 10s infinite;
+}
+
+@keyframes headerbckgrnd {
+    0%,100% {
+        background-image: url(../img/img1.png);
+    }
+    33% {
+        background-image: url(../img/img2.png);
+    }
+    66% {
+        background-image: url(../img/img3.png);
+    }
+}
+
+.h1 {
+    width: fit-content;
+}
+
+.h1 h1 {
+    padding: 8px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.buttonsinner {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    backdrop-filter: blur(3px);
+}
+
+.parkettabtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.parkettabtn2 button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 6px 12px;
+    color: black;
+    border-radius: 7px;
+    font-size: larger;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif ;
+    z-index: 20;
+    transition-duration: .3s;
+}
+
+.parkettabtn2 button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #58626c;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.parkettabtn2 button:hover {
+    color: white;
+}
+
+.parkettabtn2 button:hover::before {
+    width: 100%;
+}
+
+.villaynbtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.villanybtn2 button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 6px 12px;
+    color: black;
+    border-radius: 7px;
+    font-size: larger;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif ;
+    z-index: 20;
+    transition-duration: .3s;
+}
+
+.villanybtn2 button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #58626c;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.villanybtn2 button:hover {
+    color: white;
+}
+
+.villanybtn2 button:hover::before {
+    width: 100%;
+}
+
+.lakatolasbtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.lakatolasbtn2 button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 6px 12px;
+    color: black;
+    border-radius: 7px;
+    font-size: larger;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif ;
+    z-index: 20;
+    transition-duration: .3s;
+}
+
+.lakatolasbtn2 button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #58626c;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.lakatolasbtn2 button:hover {
+    color: white;
+}
+
+.lakatolasbtn2 button:hover::before {
+    width: 100%;
+}
+
+.elerhetosegbtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.elerhetosegbtn2 button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 6px 12px;
+    color: black;
+    border-radius: 7px;
+    font-size: larger;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif ;
+    z-index: 20;
+    transition-duration: .3s;
+}
+
+.elerhetosegbtn2 button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #58626c;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.elerhetosegbtn2 button:hover {
+    color: white;
+}
+
+.elerhetosegbtn2 button:hover::before {
+    width: 100%;
+}
+
+.parkettabtn2, .villanybtn2, .lakatolasbtn2, .elerhetosegbtn2 {
+    margin: 3px;
+}
+
+.arrow {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow span {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: xx-large;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f1ee;
+}
+
+.parketta {
+    background-color: #f5f1ee;
+}
+
+.parketta h1 {
+    background-color: #dac8be;
+    padding: 15px;
+    border-radius: 7px;
+    width: fit-content;
+    margin: 10px;
+}
+
+.parketta1 h1, .parketta2 h1, .parketta3 h1, .parketta4 h1 {
+    font-size: medium;
+}
+
+.parketta1, .parketta2, .parketta3, .parketta4 {
+    background-color: #dac8be;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 270px;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    margin: 20px;
+    padding: 20px;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 7px;
+    background-color: #dac8be;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+    transition-duration: .3s;
+}
+
+.btn button::before {
+    content: "";
+    background-color: #58626c;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 0%;
+    transition: .3s ease;
+}
+
+.btn button:hover {
+    color: white;
+}
+
+.btn button:hover::before {
+    width: 100%;
+}
