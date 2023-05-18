@@ -1,511 +1,344 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-* {
-    outline: 1px dashed red;
-}
 
 html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f1;
 }
 
 body {
     margin: 0;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(3px);
-}
-
-.homebtn button {
-    position: relative;
-    padding: 8px 16px;
-    font-size: larger;
-    border: none;
-    background-color: transparent;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 20;
-    border-radius: 7px;
-}
-
-.homebtn button::before {
-    content: '';
-    background-color: #58626c;
-    display: block;
-    width: 0;
-    height: 38.4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.homebtn button:hover {
-    color: white;
-}
-
-.homebtn button:hover::before {
-    width: 100%;
-}
-
-.parkettabtn button {
-    position: relative;
-    padding: 8px 16px;
-    font-size: larger;
-    border: none;
-    background-color: transparent;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 20;
-    border-radius: 7px;
-}
-
-.parkettabtn button::before {
-    content: '';
-    background-color: #58626c;
-    display: block;
-    width: 0;
-    height: 38.4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.parkettabtn button:hover {
-    color: white;
-}
-
-.parkettabtn button:hover::before {
-    width: 100%;
-}
-
-.villanybtn button {
-    position: relative;
-    padding: 8px 16px;
-    font-size: larger;
-    border: none;
-    background-color: transparent;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 20;
-    border-radius: 7px;
-}
-
-.villanybtn button::before {
-    content: '';
-    background-color: #58626c;
-    display: block;
-    width: 0;
-    height: 38.4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.villanybtn button:hover {
-    color: white;
-}
-
-.villanybtn button:hover::before {
-    width: 100%;
-}
-
-.lakatolasbtn button {
-    position: relative;
-    padding: 8px 16px;
-    font-size: larger;
-    border: none;
-    background-color: transparent;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 20;
-    border-radius: 7px;
-}
-
-.lakatolasbtn button::before {
-    content: '';
-    background-color: #58626c;
-    display: block;
-    width: 0;
-    height: 38.4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.lakatolasbtn button:hover {
-    color: white;
-}
-
-.lakatolasbtn button:hover::before {
-    width: 100%;
-}
-
-.elerhetosegbtn button {
-    position: relative;
-    padding: 8px 16px;
-    font-size: larger;
-    border: none;
-    background-color: transparent;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 20;
-    border-radius: 7px;
-}
-
-.elerhetosegbtn button::before {
-    content: '';
-    background-color: #58626c;
-    display: block;
-    width: 0;
-    height: 38.4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.elerhetosegbtn button:hover {
-    color: white;
-}
-
-.elerhetosegbtn button:hover::before {
-    width: 100%;
-}
-
 header {
-    height: 100vh;
-    width: 100%;
+    aspect-ratio: 1000/150;
+    background-image: url(../svg/blob-scene-haikei.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: headerbckgrnd ease-in-out 10s infinite;
 }
 
-@keyframes headerbckgrnd {
-    0%,100% {
-        background-image: url(../img/img1.png);
-    }
-    33% {
-        background-image: url(../img/img2.png);
-    }
-    66% {
-        background-image: url(../img/img3.png);
-    }
-}
-
-.h1 {
-    width: fit-content;
-}
-
-.h1 h1 {
-    padding: 8px;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(3px);
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60%;
-}
-
-.buttonsinner {
-    background-color: rgba(255, 255, 255, 0.4);
+header h1 {
+    margin: 0;
     padding: 20px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    height: fit-content;
-    width: fit-content;
-    backdrop-filter: blur(3px);
+    color: #1f1f1f;
 }
 
-.parkettabtn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.parkettabtn2 button {
-    border: none;
-    background-color: transparent;
-    position: relative;
-    padding: 6px 12px;
-    color: black;
-    border-radius: 7px;
-    font-size: larger;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif ;
-    z-index: 20;
-    transition-duration: .3s;
-}
-
-.parkettabtn2 button::before {
-    content: "";
-    display: block;
-    position: absolute;
+nav {
+    z-index: 999;
+    position: sticky;
+    background-color: #f1f1f1;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: #58626c;
-    transition: .3s ease;
-    z-index: -1;
 }
 
-.parkettabtn2 button:hover {
-    color: white;
-}
-
-.parkettabtn2 button:hover::before {
-    width: 100%;
-}
-
-.villaynbtn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.villanybtn2 button {
-    border: none;
-    background-color: transparent;
-    position: relative;
-    padding: 6px 12px;
-    color: black;
-    border-radius: 7px;
-    font-size: larger;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif ;
-    z-index: 20;
-    transition-duration: .3s;
-}
-
-.villanybtn2 button::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: #58626c;
-    transition: .3s ease;
-    z-index: -1;
-}
-
-.villanybtn2 button:hover {
-    color: white;
-}
-
-.villanybtn2 button:hover::before {
-    width: 100%;
-}
-
-.lakatolasbtn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.lakatolasbtn2 button {
-    border: none;
-    background-color: transparent;
-    position: relative;
-    padding: 6px 12px;
-    color: black;
-    border-radius: 7px;
-    font-size: larger;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif ;
-    z-index: 20;
-    transition-duration: .3s;
-}
-
-.lakatolasbtn2 button::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: #58626c;
-    transition: .3s ease;
-    z-index: -1;
-}
-
-.lakatolasbtn2 button:hover {
-    color: white;
-}
-
-.lakatolasbtn2 button:hover::before {
-    width: 100%;
-}
-
-.elerhetosegbtn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.elerhetosegbtn2 button {
-    border: none;
-    background-color: transparent;
-    position: relative;
-    padding: 6px 12px;
-    color: black;
-    border-radius: 7px;
-    font-size: larger;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif ;
-    z-index: 20;
-    transition-duration: .3s;
-}
-
-.elerhetosegbtn2 button::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: #58626c;
-    transition: .3s ease;
-    z-index: -1;
-}
-
-.elerhetosegbtn2 button:hover {
-    color: white;
-}
-
-.elerhetosegbtn2 button:hover::before {
-    width: 100%;
-}
-
-.parkettabtn2, .villanybtn2, .lakatolasbtn2, .elerhetosegbtn2 {
-    margin: 3px;
-}
-
-.arrow {
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow span {
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 10px;
-    border-radius: 50%;
-    font-size: xx-large;
-}
-
-.content {
+.nav-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #f5f1ee;
+    z-index: 999;
+    padding: 5px;
 }
 
-.parketta {
-    background-color: #f5f1ee;
+.menuBtn.active {
+    background-image: url(../svg/close_FILL0_wght400_GRAD0_opsz48.svg);
 }
 
-.parketta h1 {
-    background-color: #dac8be;
-    padding: 15px;
-    border-radius: 7px;
-    width: fit-content;
-    margin: 10px;
-}
-
-.parketta1 h1, .parketta2 h1, .parketta3 h1, .parketta4 h1 {
-    font-size: medium;
-}
-
-.parketta1, .parketta2, .parketta3, .parketta4 {
-    background-color: #dac8be;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.img1, .img2, .img3, .img4 {
-    width: 270px;
-    height: 150px;
-    border-radius: 7px;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn button {
-    margin: 20px;
-    padding: 20px;
-    font-size: larger;
-    font-family: 'Montserrat', sans-serif;
+.menuBtn {
+    width: 30px;
+    height: 30px;
+    background-image: url(../svg/menu_FILL0_wght400_GRAD0_opsz48.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: none;
-    border-radius: 7px;
-    background-color: #dac8be;
+    background-color: transparent;
     position: relative;
+    border: 4px;
     overflow: hidden;
-    z-index: 20;
-    transition-duration: .3s;
+    z-index: 999;
+    transition: .3s ease;
+    display: none;
 }
 
-.btn button::before {
+.menuBtn::before {
     content: "";
-    background-color: #58626c;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
-    height: 100%;
+    height: 3px;
     width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    z-index: -1;
+    border-radius: 2px;
     transition: .3s ease;
 }
 
-.btn button:hover {
-    color: white;
+.menuBtn:hover::before {
+    width: 100%;
 }
 
-.btn button:hover::before {
+.homenav, .parkettanav, .villanynav, .lakatolasnav, .elerhetosegnav {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    color: #1f1f1f;
+    position: relative;
+    z-index: 999;
+}
+
+.homenav::before, .parkettanav::before, .villanynav::before, .lakatolasnav::before, .elerhetosegnav::before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #1f1f1f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .3s ease;
+}
+
+.homenav:hover::before, .parkettanav:hover::before, .villanynav:hover::before, .lakatolasnav:hover::before, .elerhetosegnav:hover::before {
     width: 100%;
+}
+
+.navmenu {
+    display: none;
+}
+
+.navmenu.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.1);
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenuitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 250px;
+    background-color: #f1f1f1;
+    border-radius: 9px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.homebtn ,.parkettabtn ,.villanybtn ,.lakatolasbtn ,.elerhetosegbtn {
+    border: none;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #1f1f1f;
+}
+
+.homebtn::before ,.parkettabtn::before ,.villanybtn::before ,.lakatolasbtn::before ,.elerhetosegbtn::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: #1f1f1f;
+    transition: .3s ease;
+}
+
+.homebtn:hover::before ,.parkettabtn:hover::before ,.villanybtn:hover::before ,.lakatolasbtn:hover::before ,.elerhetosegbtn:hover::before {
+    width: 100%;
+}
+
+.testimg {
+    width: 300px;
+}
+
+.bigcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container, .container2, .container3 {
+    width: 300px;
+}
+
+.testimgfloat {
+    width: 400px;
+    float: left;
+}
+
+.bigcontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 {
+    max-width: 850px;
+    height: fit-content;
+}
+
+.kiegyenlitop {
+    font-size: x-large;
+}
+
+.villany {
+    background-color: #092d4d;
+}
+
+.transition {
+    aspect-ratio: 1000/150;
+    background-image: url(../svg/transition.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.villany {
+    display: flex;
+    justify-content: space-evenly;
+    color: #f1f1f1;
+}
+
+.villanyh1, .szerelvenyh1 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container5, .container6 {
+    width: 400px;
+}
+
+.testimgwider {
+    width: 400px;
+}
+
+.transition2 {
+    aspect-ratio: 1000/150;
+    background-image: url(../svg/transition2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lakatolas {
+    background-color: #333333;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lakatolash1 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lakatolasp {
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+.container7 {
+    max-width: 850px;
+}
+
+.transition3 {
+    aspect-ratio: 1000/150;
+    background-image: url(../svg/transition3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elerhetoseg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:920px) {
+    .bigcontainer {
+        flex-direction: column;
+    }
+    .container, .container2, .container3 {
+        max-width: 850px;
+        width: auto;
+    }
+    .testimg {
+        float: left;
+        width: 400px;
+    }
+    .parkettap, .javitasp, .laminaltp {
+        font-size: x-large;
+    }
+    .container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+        margin: 10px;
+    }
+    .villany {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container5, .container6 {
+        max-width: 850px;
+        width: auto;
+    }
+    .testimgwider {
+        float: left;
+    }
+    .szerelvenyp, .villanyp {
+        font-size: x-large;
+    }
+}  
+
+@media (max-width:425px) {
+    .menuBtn {
+        display: block;
+    }
+    .homenav, .parkettanav, .villanynav, .lakatolasnav ,.elerhetosegnav {
+        display: none;
+    }
+    .nav-items a {
+        display: none;
+    }
+    .nav-items {
+        justify-content: flex-end;
+    }
+    .testimg {
+        width: 300px;
+    }
+    .parkettap, .javitasp, .laminaltp, .kiegyenlitop{
+        font-size: medium;
+    }
+    .testimgfloat {
+        width: 300px;
+    }
+    .villanyp {
+        font-size: medium;
+    }
+    .testimgwider {
+        width: 300px;
+    }
+    .szerelvenyp {
+        font-size: medium;
+    }
+    .lakatolasp {
+        font-size: medium;
+    }
 }
