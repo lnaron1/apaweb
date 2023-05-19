@@ -321,24 +321,30 @@ nav {
         justify-content: flex-end;
     }
     .testimg {
-        width: 300px;
+        width: 100vw;
     }
     .parkettap, .javitasp, .laminaltp, .kiegyenlitop{
         font-size: medium;
     }
     .testimgfloat {
-        width: 300px;
+        width: 100vw;
     }
     .villanyp {
         font-size: medium;
     }
     .testimgwider {
-        width: 300px;
+        width: 100vw;
     }
     .szerelvenyp {
         font-size: medium;
     }
     .lakatolasp {
         font-size: medium;
+    }
+    .container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+        margin: 10px;
+    }
+    .testimg, .testimgwider, .testimgfloat {
+        margin-left: 10px;
     }
 }
