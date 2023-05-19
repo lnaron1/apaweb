@@ -325,26 +325,30 @@ nav {
     }
     .parkettap, .javitasp, .laminaltp, .kiegyenlitop{
         font-size: medium;
+        padding-left: 10px;
     }
     .testimgfloat {
         width: 100vw;
     }
     .villanyp {
         font-size: medium;
+        padding-left: 10px;
     }
     .testimgwider {
         width: 100vw;
     }
     .szerelvenyp {
         font-size: medium;
+        padding-left: 10px;
     }
     .lakatolasp {
         font-size: medium;
+        padding-left: 10px;
     }
     .container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
         margin: 10px;
     }
-    .testimg, .testimgwider, .testimgfloat {
-        margin-left: 10px;
+    .parkettah1, .javitash1, .laminalth1, .kiegyenlitoh1, .villanyh1, .szerelvenyh1, .lakatolash1 {
+        padding-left: 10px;
     }
 }
